@@ -1,11 +1,9 @@
-export function encrypt(input, key = 42) {
-  let encrypted = "";
-
-  for (let i = 0; i < input.length; i++) {
-    const charCode = input.charCodeAt(i);
-    const xorResult = charCode ^ key;
-    encrypted += String.fromCharCode((xorResult % 94) + 33);
-  }
-
-  return encrypted;
+/**
+ * Метод для дешифровки строки, зашифрованной с помощью ROT13
+ * @param str - зашифрована строка, только заглавные буквы латинского алфавита
+ * @returns {*} - расшифрован строка
+ */
+export function decodeROT13(str) {
+    return str;
 }
+
